@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/a.css' %}">
+</head>
+<body>
+<div class="container">
+<h1>Factorial Of a Number</h1>
+<form method="POST">
+    {% csrf_token %}
+<div class="form-group">
+      <label >Number:</label>
+      <input type="text" class="form-control" name="n">
+    </div>
+
+
+
+<input type="submit">
+    </form>
+    {% if f %}
+    <h1>Factorial is {{f}}</h1>
+    {% endif %}
+   </div>
+</body>
+</html>

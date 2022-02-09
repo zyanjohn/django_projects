@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/a.css' %}">
+</head>
+<body style="background-image:url('{% static "images/m.jpg" %}');background-repeat:no-repeat;">
+<h1>HOME PAGE</h1>
+<h1>My name is {{name}}</h1>
+<p>Age is {{age}}</p>
+
+</body>
+</html>

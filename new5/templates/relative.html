@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/a.css' %}">
+</head>
+<body>
+<a class="btn btn-danger btn-md" href="{% url 'app1:home' %}">Link to home page</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="btn btn-danger btn-md" href="{% url 'app1:index' %}">Link To Index</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="btn btn-danger btn-md" href="{% url 'app2:first' %}">Link To First Page</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="btn btn-danger btn-md" href="{% url 'app1:form2' %}">Add Studentdetails</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="btn btn-danger btn-md" href="{% url 'app1:list' %}">View Studentdetails</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="btn btn-danger btn-md" href="{% url 'app1:fact' %}">Factorial Of aNumber</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</body>
+</html>
